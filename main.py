@@ -29,15 +29,13 @@ def encode(password):
     return encoded
 
 def decode(password_encoded):
-    # Take decoded password and decrease each digit by 3
-    pass
-
-if __name__ == '__main__':
-    main()
-
-def decode(password_encoded):
     # Take encoded password and decrease each digit by 3
     decoded = ''
     for i in range(len(password_encoded)):
         decoded += str((int(password_encoded[i]) - 3) % 10)
     return decoded
+
+if __name__ == '__main__':
+    main()
+
+
